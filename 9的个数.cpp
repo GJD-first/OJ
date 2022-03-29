@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 //k!=0
-//求解k在[1,n]中出现的次数
+//姹傝Вk鍦╗1,n]涓嚭鐜扮殑娆℃暟
 //k=[1,9]
 int getbit(int n)
 {

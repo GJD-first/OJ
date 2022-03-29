@@ -1,4 +1,4 @@
-//Âå¹ÈÄ£°åÌâ  Ğ¡¸ù¶Ñ
+//æ´›è°·æ¨¡æ¿é¢˜  å°æ ¹å †
 #include<iostream>
 using namespace std;
 int size=0;
