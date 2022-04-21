@@ -1,29 +1,37 @@
 #include<stdio.h>
 #include <string.h>
-#define bool int
-#define false 0
-#define true 1
 int main()
 {
-	bool tag[130];
 	char s1[60],s2[60];
-	memset(tag,false,sizeof(tag));
 	gets(s1);
-	getchar();
 	gets(s2);
-	for(int i=0;s1[i];i++)
+	int n1=strlen(s1),n2=strlen(s2);
+	int i=0,j=0;
+	while(i<n1||j<n2)
 	{
-		tag[s1[i]]=true;
-	}
-	for(int i=0;s2[i];i++)
-	{
-		tag[s2[i]]=true;
-	}
-	for(int i=0;i<130;i++)
-	{
-		if(tag[i])
+		if(i>=n1)
 		{
-			printf("%c",i);
+			printf("%c",s2[j++]);
+			continue;
+		}
+		if(j>=n2)
+		{
+			printf("%c",s1[i++]);
+			continue;
+		}
+		if(s1[i]<s2[j])
+		{
+			printf("%c",s1[i++]);
+		}
+
+		else if(s1[i]==s2[j])
+		{
+			j++;
+			printf("%c",s1[i++]);
+		}
+		else
+		{
+			printf("%c",s2[j++]);
 		}
 	}
 	return 0;
