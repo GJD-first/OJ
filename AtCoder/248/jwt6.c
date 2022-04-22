@@ -12,7 +12,7 @@ int main()
 		int id=right-left;
 		if(s2[id]!=s1[right])
 		{
-			while(left<=right)
+			while(left<=right&&s1[left]!=s2[0])
 			{
 				printf("%c",s1[left]);
 				left++;
