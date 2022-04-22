@@ -27,7 +27,6 @@ int main()
         else cout<<"NO"<<endl;
         }
     }
-
-
+    int a=0;
     return 0;
 }
